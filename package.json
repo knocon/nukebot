@@ -1,0 +1,17 @@
+{
+  "name": "nukebot",
+  "version": "1.0.0",
+  "description": "general purpose discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Nocon",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0"
+  }
+}
