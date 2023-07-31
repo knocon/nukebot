@@ -11,16 +11,16 @@ module.exports = {
 			console.log('User joined target channel to clone.');
 
 			const newChannel = await newState.channel.clone();
-                        clonedChannels.set(newChannel.id, newChannel);
+			clonedChannels.set(newChannel.id, newChannel);
 
 			const member = newState.member;
 			if (member) {
 				await member.voice.setChannel(newChannel);
-                                console.log('User joined cloned channel.');
+				console.log('User joined cloned channel.');
 
 			}
 
 		}
 	},
-        clonedChannels
+	clonedChannels,
 };
