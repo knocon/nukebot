@@ -5,6 +5,6 @@ module.exports = {
 		.setName('stop')
 		.setDescription('Stops current song!'),
 	async execute(interaction) {
-		await interaction.reply('To be done!');
+		await interaction.reply('To be done!!');
 	},
 };
