@@ -22,7 +22,7 @@ module.exports = {
     async execute(interaction) {
         await interaction.reply(`
         \`\`\`js
-      CURRENT META WEAPONS FOR SEASON 5 WARZONE
+      ☢️CURRENT META WEAPONS FOR SEASON 5 WARZONE☢️
         
         ${formattedLoadouts}
         \`\`\`
