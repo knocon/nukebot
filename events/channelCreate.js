@@ -15,7 +15,6 @@ module.exports = {
                 name: '☢️',
                 type: 2,
                 parent: parentId,
-                userLimit: 1,
             });
             dynamicChannels.set(newChannel.id, newChannel);
 
