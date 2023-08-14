@@ -1,6 +1,5 @@
 const { Events } = require('discord.js');
-//const { masterChannel, parentId } = require('../config.json');
-const { masterChannel, parentId } = require('../devconfig.json');
+const { masterChannel, parentId } = require('../config.json');
 
 const targetChannelId = masterChannel;
 const dynamicChannels = new Map();
