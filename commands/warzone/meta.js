@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { season5 } = require('./season5.js');
+const { meta, weapons } = require('./season5.js');
 
-const formattedLoadouts = season5
+const formattedLoadouts = weapons
     .map((loadout, index) => {
         return `
       // META WEAPON #${index + 1}

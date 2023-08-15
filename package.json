@@ -9,6 +9,8 @@
   "author": "Kevin Nocon",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "discord.js": "^14.11.0",
     "prettier": "^3.0.1"
   },

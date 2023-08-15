@@ -1,4 +1,7 @@
-const season5 = [
+const meta = {
+    season: '5',
+};
+const weapons = [
     {
         weapon: 'CRONEN SQUALL',
         type: 'Battlerifle',
@@ -131,4 +134,4 @@ const season5 = [
     },
 ];
 
-module.exports = { season5 };
+module.exports = { meta, weapons };
