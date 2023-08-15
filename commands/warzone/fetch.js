@@ -10,7 +10,7 @@ module.exports = {
         const response = await axios.get(url);
         const $ = cheerio.load(response.data);
         console.log('Inside Interaction');
-        console.log($('body'));
+        console.log($());
         //console.log($('.loadouts - list__group'));
         $('.loadouts-list__group')
             .find('.wrap-card loadout-card expand-card')
