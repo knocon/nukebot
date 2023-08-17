@@ -1,7 +1,10 @@
+const { Events } = require('discord.js');
+
 module.exports = {
-    name: 'postMeta',
-    async execute(message) {
-        if (message.channel.id === '1140848422501482496') {
-        }
+    name: Events.MessageCreate,
+    async execute(interaction) {
+        console.log('message received');
+
+        await interaction.reply('reponse');
     },
 };

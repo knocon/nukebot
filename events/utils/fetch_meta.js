@@ -21,6 +21,13 @@ async function fetchLoadouts() {
             const fullTypeText = $card.find('.loadout-card__type').text().trim();
             const type = fullTypeText.split('\n')[0];
 
+            const authorDiv = $card.find('.expand-card__author');
+            const authorNameDiv = authorDiv.find('span.upper');
+            let date = authorNameDiv.text().trim();
+            date = date.replace(/\n\s+/g, ' ');
+
+            console.log(date);
+
             const attachments = [];
 
             $card.find('.attachment-card').each((i, el) => {
@@ -63,6 +70,7 @@ async function fetchLoadouts() {
             loadouts.push({
                 title,
                 type,
+                date,
                 attachments,
             });
         });
