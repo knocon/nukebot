@@ -13,21 +13,20 @@ async function createEmbeds() {
                 iconURL:
                     'https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/common/icon-wz-white.png',
             })
-            .setDescription(`Weapon is considered as being the absolute meta of its category.`)
+            .setDescription(
+                `Weapon is considered as being the absolute meta of its category. Tunings are gonna be added at a later update.`,
+            )
             .setThumbnail('https://i.imgur.com/pDMCrxm.gif')
             .addFields(
-                { name: 'Regular field title', value: 'Some value here' },
-                { name: 'Regular field title', value: 'Some value here' },
+                { name: loadout.attachments[0].type, value: loadout.attachments[0].name },
+                { name: loadout.attachments[1].type, value: loadout.attachments[1].name },
+                { name: loadout.attachments[2].type, value: loadout.attachments[2].name },
+                { name: loadout.attachments[3].type, value: loadout.attachments[3].name },
+                { name: loadout.attachments[4].type, value: loadout.attachments[4].name },
                 { name: '\u200B', value: '\u200B' },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
+                // { name: 'Inline field title', value: 'Some value here', inline: true },
             )
-            .addFields({ name: 'Inline field title', value: 'Some value here', inline: true })
-            .setImage(
-                'https://api.wzhub.gg/storage/uploads/loadouts/1689543138_3e10395c-d09e-47a1-8ea3-0ab62497b51e.png',
-            )
+            .setImage(loadout.src)
             .setTimestamp()
             .setFooter({ text: `${loadout.date}`, iconURL: 'https://i.imgur.com/pDMCrxm.gif' });
         embeds.push(embed);

@@ -26,8 +26,13 @@ async function fetchLoadouts() {
             let date = authorNameDiv.text().trim();
             date = date.replace(/\n\s+/g, ' ');
 
-            console.log(date);
+            const thumbnail = $card.find('.loadout-card__thumbnail');
+            const img = thumbnail.find('img');
+            const src = img.attr('src');
 
+            console.log(thumbnail.html());
+            //console.log(img);
+            //console.log(src);
             const attachments = [];
 
             $card.find('.attachment-card').each((i, el) => {
@@ -71,6 +76,7 @@ async function fetchLoadouts() {
                 title,
                 type,
                 date,
+                src,
                 attachments,
             });
         });
